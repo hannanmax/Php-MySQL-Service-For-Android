@@ -6,6 +6,7 @@ Android has deprecated the Apache module(HttpPost and HttpGet) since API level 2
 
 
 # MySql
+```
 Table ‘tbl_login’ contains username and password of user.
 CREATE TABLE 'tbl_login' (
   'email' varchar(255) NOT NULL,
@@ -14,7 +15,7 @@ CREATE TABLE 'tbl_login' (
 Table holds data row like this.
 INSERT INTO 'tbl_login' ('email', 'password') VALUES
 ('16bcah06@gmail.com', 'password'),('nilenp22@gmail.com','pw');
-
+```
 # PHP
 include config.inc.php file to connect database.
 Check if POST data is set from android.
@@ -22,6 +23,7 @@ Query the database to see row exist or not.
 Return the result.
 
 # login.inc.php
+```
 <?php
 
      include 'config.inc.php';
@@ -54,8 +56,9 @@ Return the result.
   	}
 	
 ?>
-
+```
 # config.inc.php
+```
 <?php
 
 $servername = "localhost";
@@ -263,9 +266,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
-
+```
 # activity_main.xml
 The xml file for MainActivity.java.
+```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
@@ -306,9 +310,10 @@ The xml file for MainActivity.java.
         android:onClick="checkLogin"/>
 
 </RelativeLayout>
-
+```
 # SuccessActivity.java
 This Activity is launched from onPreExecute() method after login success.
+```
 package com.guru.login;
 
 import android.support.v7.app.AppCompatActivity;
@@ -355,9 +360,11 @@ The xml file for SuccessActivity.java.
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
+```
 
 # AndroidManifest.xml
 Don’t forget to add uses-permission and SuccessActivity to your AndroidManifest.xml file.
+```
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.guru.login" >
@@ -385,3 +392,4 @@ Don’t forget to add uses-permission and SuccessActivity to your AndroidManifes
     </application>
 
 </manifest>
+```
