@@ -1,4 +1,4 @@
-# Login system with android php and mysql using httpurlconnection
+# Php-MySQL-Service-For-Android 
 
 ![ScreenShot](http://androidcss.com/wp-content/uploads/2016/03/android-php-mysql-login-720x410.jpg)
 
