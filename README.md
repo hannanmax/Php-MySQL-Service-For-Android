@@ -13,7 +13,7 @@ CREATE TABLE 'tbl_login' (
 );
 Table holds data row like this.
 INSERT INTO 'tbl_login' ('email', 'password') VALUES
-('gpkharvi@gmail.com', 'password');
+('16bcah06@gmail.com', 'password'),('nilenp22@gmail.com','pw');
 
 # PHP
 include config.inc.php file to connect database.
