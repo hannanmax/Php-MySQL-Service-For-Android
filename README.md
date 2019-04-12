@@ -76,7 +76,8 @@ catch(PDOException $e)
     }
 
 ?>
-Android
+```
+# Android
 The image on the top of page shows both MainActivity.java and SuccessActivity.java respectively.
 MainActivity.java
 On LogIn button click checkLogin() function is triggered. Which innitiate AsyncLogin class to carry out Asynchronous task.
@@ -85,6 +86,8 @@ doInBackground(Params…), invoked on the background thread immediately after
 onPreExecute() finishes executing. The sending and recieving data from and to php file using HttpURLConnection class has done in this function.
 onPostExecute(Result), invoked on the UI thread after the background computation finishes. Here we are checking for recieved result.
 The parameters params[0] and params[1] is from AsyncLogin’s execute method.
+
+```
 package com.guru.login;
 import android.app.ProgressDialog;
 import android.content.Intent;
